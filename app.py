@@ -10,7 +10,7 @@ def hello():
 def world():
     return 'Doraemon page!!!!'
 @app.route('/digimon')
-def world():
+def eiei():
     return 'Digimon page!!!!'
 
 if __name__ =='__main__':
