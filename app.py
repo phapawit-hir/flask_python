@@ -18,7 +18,7 @@ def eiei():
 def huhu():
     con = psycopg2.connect(user="postgres",
                                   password="postgres",
-                                  host="127.0.0.1",
+                                  host="192.168.40.199",
                                   port="5432",
                                   database="postgres")
     con.cursor().execute('SELECT * from persons;')
