@@ -15,7 +15,7 @@ def eiei():
     return 'Digimon page!!!!'
 
 @app.route('/add_data')
-def eiei():
+def huhu():
     con = psycopg2.connect(user="postgres",
                                   password="postgres",
                                   host="127.0.0.1",
