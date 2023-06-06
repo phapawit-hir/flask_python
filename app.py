@@ -7,7 +7,7 @@ app = Flask(__name__)
 def hello():
     return 'Hello, World!'
 @app.route('/Doraemon')
-def hello():
+def world():
     return 'Doraemon page!!!!'
 
 if __name__ =='__main__':
