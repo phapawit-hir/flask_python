@@ -22,7 +22,8 @@ def eiei():
                                   port="5432",
                                   database="postgres")
     con.cursor().execute('SELECT * from persons;')
-    return 'Adding data is OK'
+    record = cursor.fetchone()
+    return record
 
 if __name__ =='__main__':
     app.run(debug = True, host='0.0.0.0', port='3333')
