@@ -24,7 +24,7 @@ def huhu():
     cursor=con.cursor()
     cursor.execute('SELECT * from persons;')
     record = cursor.fetchone()
-    return record
+    return str(record)
 
 if __name__ =='__main__':
     app.run(debug = True, host='0.0.0.0', port='3333')
