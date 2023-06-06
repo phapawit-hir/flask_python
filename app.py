@@ -21,7 +21,8 @@ def huhu():
                                   host="192.168.40.199",
                                   port="5432",
                                   database="postgres")
-    con.cursor().execute('SELECT * from persons;')
+    cursor=con.cursor()
+    cursor.execute('SELECT * from persons;')
     record = cursor.fetchone()
     return record
 
