@@ -22,7 +22,7 @@ def huhu():
                                   port="5432",
                                   database="postgres")
     cursor=con.cursor()
-    cursor.execute('SELECT * from persons;')
+    cursor.execute('SELECT * from Persons;')
     record = cursor.fetchone()
     return str(record)
 
