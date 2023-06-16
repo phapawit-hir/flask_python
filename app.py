@@ -12,7 +12,7 @@ def hello():
     return 'Hello, Hello!'
 
 @app.route('/ppp')
-def hello():
+def aaa():
     return 'ppp page'
 
 @app.route('/add_data')
