@@ -15,6 +15,10 @@ def hello():
 def aaa():
     return 'ppp page'
 
+@app.route('/pppaaa')
+def bbb():
+    return 'pppaaaa page'
+
 @app.route('/add_data')
 def huhu():
     con = psycopg2.connect(user="postgres",
