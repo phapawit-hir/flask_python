@@ -11,6 +11,10 @@ querydb = os.environ['querydb']
 def hello():
     return 'Hello, Hello!'
 
+@app.route('/ppp')
+def hello():
+    return 'ppp page'
+
 @app.route('/add_data')
 def huhu():
     con = psycopg2.connect(user="postgres",
