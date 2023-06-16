@@ -1,4 +1,4 @@
-FROM python:3.12.0b1-buster
+FROM python:3.9.17-slim-bullseye
 
 WORKDIR /app
 COPY ./ /app
