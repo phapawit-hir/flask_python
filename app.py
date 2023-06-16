@@ -1,28 +1,25 @@
 from flask import Flask
 import psycopg2
+import os
 
 app = Flask(__name__)
+postgres = os.environ['hostdb']
+query = os.environ['querydb']
 
 
 @app.route('/')
 def hello():
-    return 'Hello, World!'
-@app.route('/Doraemon')
-def world():
-    return 'Doraemon page!!!!'
-@app.route('/digimon')
-def eiei():
-    return 'Digimon page!!!!'
+    return 'Hello, Hello!'
 
 @app.route('/add_data')
 def huhu():
     con = psycopg2.connect(user="postgres",
                                   password="postgres",
-                                  host="srv-captain--postgrespython",
+                                  host=hostdb,
                                   port="5432",
                                   database="postgres")
     cursor=con.cursor()
-    cursor.execute('SELECT * from Persons;')
+    cursor.execute(querydb)
     record = cursor.fetchone()
     return str(record)
 
