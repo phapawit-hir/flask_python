@@ -3,8 +3,8 @@ import psycopg2
 import os
 
 app = Flask(__name__)
-postgres = os.environ['hostdb']
-query = os.environ['querydb']
+hostdb = os.environ['hostdb']
+querydb = os.environ['querydb']
 
 
 @app.route('/')
